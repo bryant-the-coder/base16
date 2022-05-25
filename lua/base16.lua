@@ -206,6 +206,13 @@ local function apply_base16_theme(theme)
     highlight("rainbowcol5", theme.base0D, nil, nil, nil)
     highlight("rainbowcol6", theme.base0E, nil, nil, nil)
 
+    -- Indent
+    highlight("IndentBlanklineIndent1", theme.base0B, nil, nil, nil)
+    highlight("IndentBlanklineIndent2", theme.base0D, nil, nil, nil)
+    highlight("IndentBlanklineIndent3", theme.base0E, nil, nil, nil)
+    highlight("IndentBlanklineIndent4", theme.base0A, nil, nil, nil)
+    highlight("IndentBlanklineIndent5", theme.base0F, nil, nil, nil)
+
     -- TODO
     -- nvim.command 'syntax on'
 end
