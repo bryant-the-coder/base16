@@ -1,7 +1,7 @@
 local colors = {
     white = "#ced4df",
     darker_black = "#090e13",
-    black = "#0F1419", --  nvim bg
+    black = "#0F1419",
     black2 = "#151a1f",
     one_bg = "#1f2429",
     one_bg2 = "#282d32",
@@ -13,7 +13,7 @@ local colors = {
     red = "#F07178",
     baby_pink = "#FFB5C3",
     pink = "#f9afbd",
-    line = "#151A1E", -- for lines like vertsplit
+    line = "#151A1E",
     green = "#B8CC52",
     vibrant_green = "#c2d65c",
     blue = "#36A3D9",
