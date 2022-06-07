@@ -1,4 +1,4 @@
-return {
+local colors = {
     white = "#cdc0ad",
     darker_black = "#201d1c",
     black = "#252221", --  nvim bg
@@ -31,3 +31,5 @@ return {
     folder_bg = "#768b9b",
     beige = "#ab9382",
 }
+
+return colors
