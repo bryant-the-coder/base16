@@ -89,6 +89,7 @@ local function apply_base16_theme(theme)
     highlight("TabLine", theme.base03, theme.base01, "none", nil)
     highlight("TabLineFill", theme.base03, theme.base01, "none", nil)
     highlight("TabLineSel", theme.base0B, theme.base01, "none", nil)
+    highlight("Whitespace", theme.base05, nil, nil, nil)
 
     -- Standard syntax highlighting
     highlight("Boolean", theme.base09, nil, nil, nil)
