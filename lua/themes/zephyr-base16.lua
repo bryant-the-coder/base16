@@ -1,4 +1,4 @@
-return {
+local base = {
     base00 = "#282c34",
     base01 = "#323440",
     base02 = "#2E323C",
@@ -16,3 +16,5 @@ return {
     base0E = "#EC5f67",
     base0F = "#d16d9e",
 }
+
+return base

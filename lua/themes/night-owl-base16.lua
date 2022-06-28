@@ -1,4 +1,4 @@
-return {
+local base = {
     base00 = "#011627", -- bg
     base01 = "#0c2132", -- lightbg
     base02 = "#172c3d", -- selection bg
@@ -16,3 +16,5 @@ return {
     base0E = "#c792ea", -- Keywords, Storage, Selector, Markup Italic, Diff Changed
     base0F = "#d6deeb", -- Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
 }
+
+return base

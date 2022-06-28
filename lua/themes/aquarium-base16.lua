@@ -1,4 +1,4 @@
-local colors = {
+local base = {
     base00 = "#20202A", -- Default Background
     base01 = "#2c2e3e", -- Lighter Background (Used for status bars, line number and folding marks)
     base02 = "#3D4059", -- Selection Background
@@ -17,4 +17,4 @@ local colors = {
     base0F = "#eAc1c1", -- Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` (pink)
 }
 
-return colors
+return base

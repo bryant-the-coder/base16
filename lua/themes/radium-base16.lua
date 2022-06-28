@@ -1,5 +1,5 @@
 -- Taken from NvChad
-return {
+local base = {
     base00 = "#101317",
     base01 = "#171C21",
     base02 = "#1c2026",
@@ -17,3 +17,5 @@ return {
     base0E = "#c397d8",
     base0F = "#e87979",
 }
+
+return base

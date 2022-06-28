@@ -1,5 +1,5 @@
 -- Code from max397574
-return {
+local base = {
     base00 = "#282c34",
     base01 = "#2c3038",
     base02 = "#646870",
@@ -17,3 +17,5 @@ return {
     base0E = "#f7c3df",
     base0F = "#ffe896",
 }
+
+return base
