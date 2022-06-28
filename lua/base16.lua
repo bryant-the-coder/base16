@@ -39,9 +39,7 @@ local function apply_base16_theme(theme)
         end
     end
 
-    -- TODO
-    -- nvim.command "hi clear"
-    -- nvim.command "syntax reset"
+    -- TODO: Allow import from base30
 
     -- Vim editor colors
     highlight("Normal", theme.base05, theme.base00, nil, nil)
