@@ -12,7 +12,7 @@ local base = {
     base03 = "#545c7e",
     base08 = "#f7768e",
     base01 = "#3b4261",
-    base00 = "#1A1B26",
+    base00 = "#1f2335",
     base09 = "#ff9e64",
     base06 = "#bbc5f0",
 }
