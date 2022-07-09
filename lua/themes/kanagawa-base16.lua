@@ -7,14 +7,14 @@ local base = {
     base05 = "#DCD7BA",
     base06 = "#e1dcbf",
     base07 = "#e1dcbf",
-    base08 = "#7AA89F",
+    base08 = "#E46876",
     base09 = "#FFA066",
-    base0A = "#7AA89F",
+    base0A = "#E6C384",
     base0B = "#98BB6C",
-    base0C = "#C0A36E",
+    base0C = "#7FB4CA",
     base0D = "#7E9CD8",
-    base0E = "#8d77b0",
-    base0F = "#9CABCA",
+    base0E = "#957FB8",
+    base0F = "#FF5D62",
 }
 
 return base
