@@ -1,13 +1,36 @@
-local function highlight(group, guifg, guibg, sp, sp_color)
-    local hl = {
-        fg = guifg,
-        bg = guibg,
-        special = sp_color,
-    }
-    if sp ~= nil and sp ~= "none" then
-        hl[sp] = true
+local function highlight(group, guifg, guibg, attr, guisp)
+    local arg = {}
+    if guifg then
+        if vim.tbl_contains({ "none", "NONE", "None" }, guifg) then
+            arg["fg"] = ""
+        else
+            arg["fg"] = guifg
+        end
     end
-    vim.api.nvim_set_hl(0, group, hl)
+    if guibg then
+        if vim.tbl_contains({ "none", "NONE", "None" }, guibg) then
+            arg["bg"] = ""
+        else
+            arg["bg"] = guibg
+        end
+    end
+    if attr then
+        if type(attr) == "table" then
+            for _, at in ipairs(attr) do
+                arg[at] = true
+            end
+        else
+            if not vim.tbl_contains({ "none", "NONE", "None" }, attr) then
+                arg[attr] = true
+            end
+        end
+    end
+    if guisp then
+        arg["sp"] = guisp
+    end
+
+    -- nvim.ex.highlight(parts)
+    vim.api.nvim_set_hl(0, group, arg)
 end
 
 -- Modified from https://github.com/chriskempson/base16-vim
