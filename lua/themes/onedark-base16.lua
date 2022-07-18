@@ -1,5 +1,6 @@
 local base = {
     base00 = "#1e222a",
+    -- base00 = "#282c34", -- og
     base01 = "#353b45",
     base02 = "#3e4451",
     base03 = "#545862",
@@ -10,9 +11,11 @@ local base = {
     base08 = "#e06c75",
     base09 = "#d19a66",
     base0A = "#e5c07b",
+    -- base0A = "#e6c07b", -- og
     base0B = "#98c379",
     base0C = "#56b6c2",
     base0D = "#61afef",
+    -- base0D = "#61aeee", -- og
     base0E = "#c678dd",
     base0F = "#be5046",
 }
