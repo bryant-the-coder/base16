@@ -115,7 +115,7 @@ local function apply_base16_theme(theme)
     -- Standard syntax highlighting
     highlight("Boolean", theme.base09, nil, nil, nil)
     highlight("Character", theme.base08, nil, nil, nil)
-    highlight("Comment", theme.base03, nil, nil, nil)
+    highlight("Comment", theme.base03, nil, { italic = true, bold = true }, nil)
     highlight("Conditional", theme.base0E, nil, nil, nil)
     highlight("Constant", theme.base09, nil, nil, nil)
     highlight("Define", theme.base0E, nil, "none", nil)
@@ -187,7 +187,7 @@ local function apply_base16_theme(theme)
 
     -- treesitter
     highlight("TSAnnotation", theme.base0F, nil, "none", nil)
-    highlight("TSComment", theme.base03, nil, nil, nil)
+    highlight("TSComment", theme.base03, nil, { italic = true, bold = true }, nil)
     highlight("TSAttribute", theme.base0A, nil, "none", nil)
     highlight("TSTagAttribute", theme.base0A, nil, "none", nil)
     highlight("TSCharacter", theme.base08, nil, "none", nil)
