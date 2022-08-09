@@ -13,7 +13,7 @@ local colors = {
     red = "#DF5B61",
     baby_pink = "#EE6A70",
     pink = "#F16269",
-    line = "#152024", -- for lines like vertsplit
+    line = "#222d31", -- for lines like vertsplit
     green = "#78B892",
     vibrant_green = "#8CD7AA",
     nord_blue = "#5A84BC",
@@ -27,7 +27,6 @@ local colors = {
     cyan = "#67AFC1",
     statusline_bg = "#0A1519",
     lightbg = "#1a2529",
-    lightbg2 = "#111C20",
     pmenu_bg = "#78B892",
     folder_bg = "#6791C9",
 }
