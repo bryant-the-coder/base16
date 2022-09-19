@@ -62,5 +62,5 @@ base16.themes["zenburn"] == {
 > Replace `zenburn` with the theme you want to override
 
 ## Credits
-- [max397574](https://github.com/max397574/NeovimConfig)
+- [max397574](https://github.com/max397574/omega-nvim)
 - [NvChad](https://github.com/NvChad/base46)
