@@ -246,7 +246,7 @@ local function apply_base16_theme(theme)
     highlight("IndentBlanklineIndent3", theme.base0E, nil, nil, nil)
     highlight("IndentBlanklineIndent4", theme.base0A, nil, nil, nil)
     highlight("IndentBlanklineIndent5", theme.base0F, nil, nil, nil)
-    highlight("@neorg.markup.italic", theme.base00, nil, nil, "italic")
+    highlight("@neorg.markup.italic", theme.base00, nil, "italic", nil)
 
     -- TODO
     -- nvim.command 'syntax on'
