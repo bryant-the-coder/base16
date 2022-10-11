@@ -15,6 +15,7 @@ return {
     pink = "#bb7cb6",
     line = "#2e2e2e", -- for lines like vertsplit
     green = "#B5CEA8",
+    green1 = "#4EC994",
     vibrant_green = "#bfd8b2",
     blue = "#569CD6",
     nord_blue = "#60a6e0",
@@ -22,7 +23,7 @@ return {
     sun = "#e1c487",
     purple = "#c68aee",
     dark_purple = "#b77bdf",
-    teal = "#4EC994",
+    teal = "#4294D6",
     orange = "#d3967d",
     cyan = "#9CDCFE",
     statusline_bg = "#242424",

@@ -1,5 +1,4 @@
 local base = {
-    --author of this template Tomas Iser, @tomasiser on github,
     base00 = "#1E1E1E",
     base01 = "#262626",
     base02 = "#303030",
@@ -15,7 +14,7 @@ local base = {
     base0C = "#9CDCFE",
     base0D = "#DCDCAA",
     base0E = "#C586C0",
-    base0F = "#CE9178",
+    base0F = "#E9E9E9",
 }
 
 return base
