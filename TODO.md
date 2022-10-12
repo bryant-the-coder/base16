@@ -1,1 +1,0 @@
-- [ ] Change the purple color of all themes
