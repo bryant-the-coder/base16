@@ -11,13 +11,13 @@ Install the theme with your preferred package manager:
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'bryant-the-coder/nvim-base16.lua'
+Plug 'bryant-the-coder/base16'
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'bryant-the-coder/nvim-base16.lua'
+use 'bryant-the-coder/base16'
 ```
 
 ## Usage
