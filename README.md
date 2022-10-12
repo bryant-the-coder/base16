@@ -9,7 +9,6 @@ Programmatic lua library for setting
 Install the theme with your preferred package manager:
 
 [vim-plug](https://github.com/junegunn/vim-plug)
-
 ```vim
 Plug 'bryant-the-coder/base16'
 ```
