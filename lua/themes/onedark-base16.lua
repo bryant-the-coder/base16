@@ -1,6 +1,6 @@
 local base = {
-    -- base00 = "#1e222a",
-    base00 = "#0e1013", -- og
+    base00 = "#1e222a",
+    -- base00 = "#282c34", -- og
     base01 = "#353b45",
     base02 = "#3e4451",
     base03 = "#545862",
