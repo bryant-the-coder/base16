@@ -301,8 +301,6 @@ local function apply_base16_theme(theme)
     highlight("LspDiagnosticsDefaultInfo", theme.base0D, nil, nil, nil)
     highlight("LspDiagnosticsDefaultHint", theme.base0C, nil, nil, nil)
 
-    highlight("TelescopeNormal", theme.base05, theme.base00, nil, nil)
-    highlight("TelescopePreviewNormal", theme.base05, theme.base00, nil, nil)
     highlight("Keyword", theme.base0E, nil, "italic", nil)
     highlight("PMenu", theme.base05, theme.base00, nil, nil)
     highlight("Special", theme.base0C, nil, "italic", nil)
