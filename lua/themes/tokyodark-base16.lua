@@ -1,6 +1,6 @@
 -- Code from max397574
 local base = {
-    base00 = "#0d0d0d",
+    base00 = "#11121d",
     base01 = "#1b1c27",
     base02 = "#21222d",
     base04 = "#282934",
