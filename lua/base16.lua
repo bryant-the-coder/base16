@@ -188,7 +188,7 @@ local function apply_base16_theme(theme)
     -- treesitter
     -- ==========
     -- Misc
-    highlight("@comment", theme.base03, nil, nil, nil)
+    highlight("@comment", theme.base03, nil, "italic", nil)
     highlight("@error", theme.base08, nil, nil, nil)
     highlight("@none", theme.base05, nil, nil, nil)
     highlight("@preproc", theme.base0A, nil, nil, nil)
