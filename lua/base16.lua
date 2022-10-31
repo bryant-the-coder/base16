@@ -116,7 +116,7 @@ local function apply_base16_theme(theme)
     -- Standard syntax highlighting
     highlight("Boolean", theme.base09, nil, nil, nil)
     highlight("Character", theme.base08, nil, nil, nil)
-    highlight("Comment", theme.base03, nil, nil, nil)
+    highlight("Comment", theme.base03, nil, "italic", nil)
     highlight("Conditional", theme.base0E, nil, "italic", nil)
     highlight("Constant", theme.base09, nil, nil, nil)
     highlight("Define", theme.base0E, nil, nil, nil)
