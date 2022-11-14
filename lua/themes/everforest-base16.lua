@@ -1,5 +1,5 @@
 local base = {
-    base00 = "#2b3339",
+    base00 = "#21292f",
     base01 = "#323c41",
     base02 = "#3a4248",
     base03 = "#565e64",
