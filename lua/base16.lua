@@ -329,7 +329,7 @@ local function apply_base16_theme(theme)
     highlight("WhiteSpace", "#45475A", nil, nil, nil)
 
     highlight("LazyH1", theme.base02, theme.base0B, nil)
-    highlight("LazyH2", theme.base08, nil, "bold,italic")
+    highlight("LazyH2", theme.base08, nil, "italic")
     highlight("LazyReasonPlugin", theme.base08, nil, nil)
     highlight("LazyValue", theme.base0D, nil, nil)
     highlight("LazyDir", theme.base05, nil, nil)
