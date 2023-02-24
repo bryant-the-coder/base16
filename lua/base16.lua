@@ -223,7 +223,7 @@ local function apply_base16_theme(theme)
 
     -- Keywords
     highlight("@keyword", theme.base0E, nil, nil, nil)
-    highlight("@keyword.function", theme.base0E, nil, nil, nil)
+    highlight("@keyword.function", theme.base0E, nil, "italic", nil)
     highlight("@keyword.operator", theme.base0E, nil, nil, nil)
     highlight("@keyword.return", theme.base0E, nil, nil, nil)
     highlight("@conditional", theme.base0E, nil, "italic", nil)
