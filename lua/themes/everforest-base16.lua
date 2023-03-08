@@ -1,10 +1,10 @@
 local base = {
-    base00 = "#2b3339",
+    base00 = "#1b2124",
     base01 = "#323c41",
     base02 = "#3a4248",
     base03 = "#565e64",
     base04 = "#4a5258",
-    base05 = "#d3c6aa",
+    base05 = "#dad0bc",
     base06 = "#ddd0b4",
     base07 = "#e7dabe",
     base08 = "#e67e80",
