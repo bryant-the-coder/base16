@@ -130,6 +130,7 @@ local function apply_base16_theme(theme)
     highlight("PreProc", theme.base0A, nil, nil, nil)
     highlight("Repeat", theme.base0A, nil, nil, nil)
     highlight("Special", theme.base0C, nil, nil, nil)
+    highlight("@lsp.typemod.function.defaultLibrary", theme.base0C, nil, nil, nil)
     highlight("SpecialChar", theme.base0F, nil, nil, nil)
     highlight("Statement", theme.base08, nil, nil, nil)
     highlight("StorageClass", theme.base0A, nil, nil, nil)
@@ -139,6 +140,7 @@ local function apply_base16_theme(theme)
     highlight("Todo", theme.base0A, theme.base01, nil, nil)
     highlight("Type", theme.base0A, nil, nil, nil)
     highlight("Typedef", theme.base0A, nil, nil, nil)
+    highlight("@class", theme.base0D, nil, nil, nil)
 
     -- Diff highlighting
     highlight("DiffAdd", theme.base0B, theme.base01, nil, nil)
@@ -210,6 +212,9 @@ local function apply_base16_theme(theme)
     highlight("@number", theme.base09, nil, nil, nil)
     highlight("@float", theme.base09, nil, nil, nil)
 
+    highlight("@interface", theme.base0F, nil, nil, nil)
+    highlight("@lsp.type.interface", theme.base0F, nil, nil, nil)
+
     -- Functions
     highlight("@function", theme.base0D, nil, "italic", nil)
     highlight("@function.builtin", theme.base0D, nil, nil, nil)
@@ -218,10 +223,14 @@ local function apply_base16_theme(theme)
     highlight("@method", theme.base0D, nil, "italic", nil)
     highlight("@method.call", theme.base0D, nil, nil, nil)
     highlight("@constructor", theme.base0C, nil, nil, nil)
+    highlight("@struct", theme.base0D, nil, nil, nil)
     highlight("@parameter", theme.base08, nil, "italic", nil)
+    highlight("@lsp.type.parameter", theme.base08, nil, "italic", nil)
 
     -- Keywords
     highlight("@keyword", theme.base0E, nil, nil, nil)
+    highlight("@keyword.export", theme.base0D, nil, "bold", nil)
+    highlight("@lsp.type.keyword", theme.base0E, nil, nil, nil)
     highlight("@keyword.function", theme.base0E, nil, nil, nil)
     highlight("@keyword.operator", theme.base0E, nil, nil, nil)
     highlight("@keyword.return", theme.base0E, nil, nil, nil)
@@ -234,6 +243,9 @@ local function apply_base16_theme(theme)
 
     -- Types
     highlight("@type", theme.base0A, nil, nil, nil)
+    highlight("@lsp.type.enum", theme.base0A, nil, nil, nil)
+    highlight("@enum", theme.base0C, nil, nil, nil)
+    highlight("@enumMember", theme.base0F, nil, nil, nil)
     highlight("@type.builtin", theme.base0A, nil, nil, nil)
     highlight("@type.definition", theme.base0A, nil, nil, nil)
     highlight("@type.qualifier", theme.base0A, nil, nil, nil)
@@ -241,14 +253,17 @@ local function apply_base16_theme(theme)
     highlight("@attribute", theme.base0A, nil, nil, nil)
     highlight("@field", theme.base08, nil, "italic", nil)
     highlight("@property", theme.base08, nil, nil, nil)
+    highlight("@lsp.type.property", theme.base08, nil, nil, nil)
 
     -- Identifiers
     highlight("@variable", theme.base05, nil, "italic", nil)
     highlight("@variable.builtin", theme.base09, nil, nil, nil)
+    highlight("@lsp.typemod.variable.defaultLibrary", theme.base09, nil, nil, nil)
     highlight("@constant", theme.base09, nil, nil, nil)
     highlight("@constant.builtin", theme.base09, nil, nil, nil)
     highlight("@constant.macro", theme.base08, nil, nil, nil)
     highlight("@namespace", theme.base08, nil, nil, nil)
+    highlight("@lsp.type.namespace", theme.base08, nil, nil, nil)
     highlight("@symbol", theme.base0B, nil, nil, nil)
 
     -- Text
@@ -325,6 +340,16 @@ local function apply_base16_theme(theme)
     highlight("TSRainbowViolet", theme.base0E, nil, nil, nil)
     highlight("TSRainbowCyan", theme.base0C, nil, nil, nil) ]]
     highlight("@neorg.markup.italic", nil, nil, "italic", nil)
+
+    highlight("@event", theme.base0F, nil, nil, nil)
+    highlight("@modifier", theme.base0F, nil, nil, nil)
+    highlight("@regexp", theme.base08, nil, nil, nil)
+    highlight("@typeParameter", theme.base0A, nil, nil, nil)
+    highlight("@decorator", theme.base0F, nil, nil, nil)
+
+    -- Toml
+    highlight("@property.toml", theme.base0D, nil, nil, nil)
+
     -- Indent
     highlight("IndentBlanklineIndent1", theme.base0B, nil, nil, nil)
     highlight("IndentBlanklineIndent2", theme.base0D, nil, nil, nil)
