@@ -1,0 +1,35 @@
+local colors = {
+    white = "#b9b9b9",
+    darker_black = "#0a0d11",
+    black = "#101317", -- nvim bg
+    black2 = "#16191d",
+    one_bg = "#141416",
+    one_bg2 = "#121214",
+    one_bg3 = "#19191c",
+    grey = "#38393f",
+    grey_fg = "#252528",
+    grey_fg2 = "#2d2d30",
+    light_grey = "#949494",
+    red = "#e25656",
+    baby_pink = "#DE878F",
+    pink = "#F186b5",
+    line = "#22292b", -- for lines like vertsplit
+    green = "#36c692",
+    vibrant_green = "#79dcaa",
+    nord_blue = "#54ced6",
+    blue = "#7ab0df",
+    yellow = "#ffe59e",
+    sun = "#Fac767",
+    purple = "#c397d8",
+    dark_purple = "#b77ee0",
+    teal = "#8ad8ef",
+    orange = "#e19d5c",
+    cyan = "#54ced6",
+    statusline_bg = "#1c2325",
+    lightbg = "#2a3133",
+    lightbg2 = "#232a2c",
+    pmenu_bg = "#8ccf7e",
+    folder_bg = "#6da4cd",
+}
+
+return colors

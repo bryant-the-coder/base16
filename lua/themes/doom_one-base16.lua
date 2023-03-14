@@ -1,0 +1,20 @@
+-- Code from max
+return {
+    base00 = "#282c34",
+    base01 = "#2e323a",
+    base02 = "#393d45",
+    base03 = "#50545c",
+    base04 = "#646870",
+    base05 = "#bbc2cf",
+    base06 = "#bbc2cf",
+    base07 = "#bbc2cf",
+    base08 = "#ff6c6b",
+    base09 = "#da8548",
+    base0A = "#ECBE7B",
+    base0B = "#98be65",
+    base0C = "#5bb9f9",
+    base0D = "#51afef",
+    -- base0D = "#51afef",
+    base0E = "#c678dd",
+    base0F = "#ff6c6b",
+}
