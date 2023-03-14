@@ -49,27 +49,6 @@ M.extend_default_hl = function(highlights)
       end
     end
   end
-
-  -- transparency
-  if vim.g.transparency then
-    local glassy = require "base46.glassy"
-
-    for key, value in pairs(glassy) do
-      if highlights[key] then
-        highlights[key] = M.merge_tb(highlights[key], value)
-      end
-    end
-  end
-
-  if config.ui.hl_override then
-    local overriden_hl = M.turn_str_to_color(config.ui.hl_override)
-
-    for key, value in pairs(overriden_hl) do
-      if highlights[key] then
-        highlights[key] = M.merge_tb(highlights[key], value)
-      end
-    end
-  end
 end
 
 M.load_highlight = function(group)
@@ -132,15 +111,6 @@ M.compile = function()
       M.saveStr_to_cache(filename, M.load_highlight(filename))
     end
   end
-
-  -- look for custom cached highlight files
-  local extended_integrations = config.ui.extended_integrations
-
-  if extended_integrations then
-    for _, integration in ipairs(extended_integrations) do
-      M.saveStr_to_cache(integration, require("base46.extended_integrations." .. integration))
-    end
-  end
 end
 
 M.load_all_highlights = function()
@@ -152,48 +122,5 @@ M.load_all_highlights = function()
   end
 end
 
-M.override_theme = function(default_theme, theme_name)
-  local changed_themes = config.ui.changed_themes
-
-  if changed_themes[theme_name] then
-    return M.merge_tb(default_theme, changed_themes[theme_name])
-  else
-    return default_theme
-  end
-end
-
-M.toggle_theme = function()
-  local themes = config.ui.theme_toggle
-  local theme1 = themes[1]
-  local theme2 = themes[2]
-
-  if g.nvchad_theme ~= theme1 and g.nvchad_theme ~= theme2 then
-    vim.notify "Set your current theme to one of those mentioned in the theme_toggle table (chadrc)"
-    return
-  end
-
-  if g.nvchad_theme == theme1 then
-    g.toggle_theme_icon = "   "
-    vim.g.nvchad_theme = theme2
-    require("nvchad").replace_word('theme = "' .. theme1, 'theme = "' .. theme2)
-  else
-    vim.g.nvchad_theme = theme1
-    g.toggle_theme_icon = "   "
-    require("nvchad").replace_word('theme = "' .. theme2, 'theme = "' .. theme1)
-  end
-  
-  M.load_all_highlights()
-end
-
-M.toggle_transparency = function()
-  g.transparency = not g.transparency
-  M.load_all_highlights()
-
-  -- write transparency value to chadrc
-  local old_data = "transparency = " .. tostring(config.ui.transparency)
-  local new_data = "transparency = " .. tostring(g.transparency)
-
-  require("nvchad").replace_word(old_data, new_data)
-end
 
 return M
