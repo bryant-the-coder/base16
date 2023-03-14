@@ -1,66 +1,64 @@
-## base16.lua
+## NvChad theme plugin
 
-Programmatic lua library for setting
-[base16](https://github.com/chriskempson/base16) themes in
-[Neovim](https://github.com/neovim/neovim).
+- This plugin's a whole re-write of Norcalli's plugin.
+ 
+(Note: This theme plugin is supposed to be used along with [NvChad](https://github.com/NvChad/NvChad) only so watchout!)
 
-## Installation
+## Contribute for new themes 
 
-Install the theme with your preferred package manager:
-
-[vim-plug](https://github.com/junegunn/vim-plug)
-```vim
-Plug 'bryant-the-coder/base16'
-```
-
-[packer](https://github.com/wbthomason/packer.nvim)
-
+- go to base46/themes and add your file, ex: atheme.lua
 ```lua
-use 'bryant-the-coder/base16'
-```
+-- atheme.lua file be like 
 
-## Usage
+local M = {}
 
-```lua
-local base16 = require ("base16")
-base16(base16.themes("<theme>"), true)
-```
-> Change `<theme>` to your preferrable theme
-
-## Advanced Usage
-1. Formats an array of 16 hex color strings into a dictionary suitable for use with `base16.apply_theme`.
-
-Example:
-```lua
-local <theme> = base16.theme_from_array {
---  base00    base01    base02    base03
- "383838"; "404040"; "606060"; "6f6f6f";
---  base04    base05    base06    base07
- "808080"; "dcdccc"; "c0c0c0"; "ffffff";
---  base08    base09    base0A    base0B
- "dca3a3"; "dfaf8f"; "e0cf9f"; "5f7f5f";
---  base0C    base0D    base0E    base0F
- "93e0e3"; "7cb8bb"; "dc8cc3"; "000000";
+M.base_30 = {
+  -- some colors 
 }
-base16(<theme>, true)
-```
-> Change `<theme>` to your preferrable theme
 
-2. Formats an array of 16 hex color strings into a dictionary suitable for use with base16.apply_theme.
-Dictionary of definitions to be used by `base16` or `base16.apply_theme`.
-
-Example:
-
-```lua
-base16.themes["zenburn"] == {
- base00 = "383838"; base01 = "404040"; base02 = "606060"; base03 = "6f6f6f";
- base04 = "808080"; base05 = "dcdccc"; base06 = "c0c0c0"; base07 = "ffffff";
- base08 = "dca3a3"; base09 = "dfaf8f"; base0A = "e0cf9f"; base0B = "5f7f5f";
- base0C = "93e0e3"; base0D = "7cb8bb"; base0E = "dc8cc3"; base0F = "000000";
+M.base_16 = {
+  -- some colors 
 }
-```
-> Replace `zenburn` with the theme you want to override
 
-## Credits
-- [max397574](https://github.com/max397574/omega-nvim)
-- [NvChad](https://github.com/NvChad/base46)
+M.type = "dark" -- this can be either dark or light
+
+M = require("base46").override_theme(M, "atheme")
+
+return M
+```
+
+## Understanding theme variables 
+
+- Read the following for base_16 variables https://github.com/chriskempson/base16/blob/master/styling.md
+
+- Use a color lightening/darkening tool, such as this https://siduck.github.io/hex-tools/
+- The following variables are for base_30 
+
+```
+black = usually your theme bg 
+darker_black = 6% darker than black
+black2 = 6% lighter than black
+
+onebg = 10% lighter than black
+oneb2 = 19% lighter than black
+oneb3 = 27% lighter than black
+
+grey = 40% lighter than black (the % here depends so choose the perfect grey!)
+grey_fg = 10% lighter than grey
+grey_fg2 = 20% lighter than grey
+light_grey = 28% lighter than grey
+
+baby_pink = 15% lighter than red or any babypink color you like!
+line = 15% lighter than black 
+
+nord_blue = 13% darker than blue 
+sun = 8% lighter than yellow
+
+statusline_bg = 4% lighter than black
+lightbg = 13% lighter than statusline_bg
+lightbg2 = 7% lighter than statusline_bg
+
+folder_bg = blue color
+
+(note : the above values are mostly approx values so its not compulsory that you have to use those exact numbers , test your theme i.e show it in the PR to get feedback from @siduck)
+```
