@@ -19,6 +19,7 @@ Plug 'bryant-the-coder/base16'
 use 'bryant-the-coder/base16'
 ```
 
+
 ## Usage
 
 ```lua
