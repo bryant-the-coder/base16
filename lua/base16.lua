@@ -202,7 +202,7 @@ local function apply_base16_theme(theme)
     highlight("@punctuation.special", theme.base08, nil, nil, nil)
 
     -- Literals
-    highlight("@string", theme.base0B, nil, nil, nil)
+    highlight("@string", theme.base0B, nil, "italic", nil)
     highlight("@string.regex", theme.base0C, nil, nil, nil)
     highlight("@string.escape", theme.base0C, nil, nil, nil)
     highlight("@string.special", theme.base0C, nil, nil, nil)
