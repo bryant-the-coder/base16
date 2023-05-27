@@ -343,7 +343,6 @@ local function apply_base16_theme(theme)
     highlight("TSRainbowViolet", theme.base0E, nil, nil, nil)
     highlight("TSRainbowCyan", theme.base0C, nil, nil, nil) ]]
     highlight("@neorg.markup.italic", nil, nil, "italic", nil)
-    highlight("NeorgCodeBlock", theme.base0E, nil, nil, nil)
 
     highlight("@event", theme.base0F, nil, nil, nil)
     highlight("@modifier", theme.base0F, nil, nil, nil)
