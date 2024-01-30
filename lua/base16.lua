@@ -259,6 +259,7 @@ local function apply_base16_theme(theme)
 
     -- Identifiers
     highlight("@variable", theme.base05, nil, "italic", nil)
+    highlight("@variable.member", theme.base08, nil, "italic", nil)
     highlight("@variable.builtin", theme.base09, nil, nil, nil)
     highlight("@lsp.typemod.variable.defaultLibrary", theme.base09, nil, nil, nil)
     highlight("@constant", theme.base08, nil, nil, nil)
